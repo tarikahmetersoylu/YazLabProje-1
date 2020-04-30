@@ -1,0 +1,25 @@
+﻿<UserControl x:Name="fvluc" x:Class="OTOSFER.UserControls.FutureVoyageListuc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OTOSFER.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="698" d:DesignWidth="981" Loaded="fvluc_Loaded">
+    <Grid Background="White">
+        <DataGrid Height="600" Width="800" x:Name="FutureVoyageListdg" RowBackground="Yellow" AutoGenerateColumns="False" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" IsReadOnly="True">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding sno}" ClipboardContentBinding="{x:Null}" Header="Sefer No"/>
+                <DataGridTextColumn Header="Tarih" Binding="{Binding t}"  ClipboardContentBinding="{x:Null}"/>
+                <DataGridTextColumn Header="Saat" Binding="{Binding s}"  ClipboardContentBinding="{x:Null}"/>
+                <DataGridTextColumn Header="Güzergah" Binding="{Binding gzr}"  ClipboardContentBinding="{x:Null}"/>
+                <DataGridTextColumn Header="Kaptan Ad" Binding="{Binding k}"  ClipboardContentBinding="{x:Null}"/>
+                <DataGridTextColumn Header="Plaka" Binding="{Binding p}" ClipboardContentBinding="{x:Null}"/>
+                <DataGridTextColumn Header="Yolcu Kapasitesi" Binding="{Binding yk}" ClipboardContentBinding="{x:Null}"/>
+                <DataGridTextColumn Header="Bilet Fiyatı" Binding="{Binding bf}" ClipboardContentBinding="{x:Null}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+    
+</UserControl>
